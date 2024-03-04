@@ -16,12 +16,14 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
    - Usuário escolhe entre perfil de passageiro ou motorista.
 
 2. **Visão de passageiro**
-   - Tela inicial com caronas disponíveis nas próximas 24h, mostrando número de vagas disponíveis, ponto de encontro e valor em R$ da contribuição esperada.
+   - Tela inicial com caronas disponíveis nas próximas 24h, mostrando número de vagas disponíveis, ponto de encontro no mapa com possibilidade de rastreio e valor em R$ da contribuição esperada.
    - Usuário pode filtrar por horário e região da cidade.
    - Usuário pode selecionar carona até 20 minutos antes do horário de partida.
+   - Possibilidade de chat com o motorista para avisar em tempo real onde estão se localizando etc.
 
 3. **Visão de motorista**
    - O motorista pode cadastrar o horário da viagem, ponto de encontro, número de vagas disponíveis e valor da contribuição de cada passageiro.
+   - Motorista consente que sua localização será visível pelo mapa dos passageiros
    - Usuário pode visualizar quantas vagas foram preenchidas.
 
 4. **Sistema de Pagamento**
@@ -31,6 +33,7 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 5. **Subsídio**
    - O aplicativo será subsidiado pela Fatec Sorocaba.
    - Link para doações ficará disponível no aplicativo.
+   - Possibilidade de patrocinadores com destaque e pontos de parada no mapa por exemplo.
 
 ---
 
@@ -44,7 +47,7 @@ Nosso objetivo é criar uma solução inovadora que facilite a vida dos pais, of
 
 ### Visão Geral do Projeto
 
-Desenvolvimento de um aplicativo móvel multiplataforma (iOS e Android) para ser um agregador de links para comparar preços de fraldas e outros produtos infantis.
+Desenvolvimento de um aplicativo multiplataforma (web, iOS e Android) para ser um agregador de links para comparar preços de fraldas e outros produtos infantis.
 
 Além disso, o aplicativo servirá como uma vitrine para comércios locais, promovendo a economia regional e incentivando o comércio local.
 
