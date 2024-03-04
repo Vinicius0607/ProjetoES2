@@ -1,5 +1,11 @@
 # ProjetoES2
 
+## Autores
+
+- &#9745; - Isabela Pontes
+- &#9745; - Luiz Miguel Jarduli Leite
+- &#9745; - Vinicius
+
 ## Tema 1: Fatec Caronas
 
 Aplicativo mobile onde alunos da Fatec Sorocaba podem oferecer ou aceitar caronas para a faculdade (ida e/ou volta).
