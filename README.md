@@ -2,9 +2,9 @@
 
 ## Autores
 
-- &#9745; - Isabela Pontes
+- &#9745; - Isabella Pontes
 - &#9745; - Luiz Miguel Jarduli Leite
-- &#9745; - Vinicius
+- &#9745; - Vinicius de Sousa Andrade
 
 ## Tema 1: Fatec Caronas
 
@@ -91,3 +91,26 @@ Além disso, o aplicativo servirá como uma vitrine para comércios locais, prom
 Nosso aplicativo de fraldas e comércio infantil visa revolucionar a forma como os pais fazem suas compras, proporcionando uma experiência conveniente, econômica e confiável.
 
 Estamos comprometidos em criar uma plataforma que não apenas simplifique a vida dos pais, mas também promova o comércio local e a economia regional.
+
+---
+
+## Tema 3: Fatec Delivery
+
+Aplicativo mobile de pedidos de lanche/almoço, pensado para os alunos da Fatec Sorocaba.
+Pensado para oferecer mais opções de comida aos alunos durante as aulas.
+
+1. **Visão de pedidos**
+   - Os usuários podem se cadastrar inserindo seu RA e após verificação de identidade (garantindo que realmente são alunos).
+   - Usuários poderão fazer pedidos com até X horas de antecedência.
+  
+2. **Visão do fornecedor**
+   - Recebe a ordem de pedido completa (número de pedidos) e entrega todos em uma só viagem.
+   - Pagamento recebido antecipadamente pelo aplicativo.
+
+4. **Sistema de Pagamento**
+   - O pagamento será feito apenas pelo aplicativo.
+
+5. **Subsídio**
+   - Pequena taxa de serviço cobrada por pedido.
+
+---
