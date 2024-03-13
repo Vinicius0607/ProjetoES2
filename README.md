@@ -6,7 +6,7 @@
 - &#9745; - Luiz Miguel Jarduli Leite
 - &#9745; - Vinicius de Sousa Andrade
 
-## Tema 1: Fatec Caronas
+## :car: Tema 1: Fatec Caronas
 
 Aplicativo mobile onde alunos da Fatec Sorocaba podem oferecer ou aceitar caronas para a faculdade (ida e/ou volta).
 Pensado para conectar alunos sem veículo próprio com outros alunos que queiram oferecer carona.
@@ -36,3 +36,5 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
    - Possibilidade de patrocinadores com destaque e pontos de parada no mapa por exemplo.
 
 ---
+
+### :dollar: [Modelo de negócios](https://github.com/pontisa/ProjetoES2/blob/main/docs/BUSINESS_MODEL.md);
