@@ -2,7 +2,7 @@
 
 ## Autores
 
-- &#9745; - Isabella Pontes
+- &#9745; - ~~Isabela Pontes~~
 - &#9745; - Luiz Miguel Jarduli Leite
 - &#9745; - Vinicius de Sousa Andrade
 
