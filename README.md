@@ -38,3 +38,12 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 ---
 
 ### :dollar: [Modelo de negócios](https://github.com/pontisa/ProjetoES2/blob/main/docs/BUSINESS_MODEL.md);
+
+---
+
+### 🚀 Tecnologias a serem utilizadas
+
+   - **FrontEnd** - Angular 17 (Backoffice administrativo)
+   - **BackEnd** - Golang
+   - **Mobile** - Flutter (Aplicativo Fatecaronas)
+   - **Banco de dados** - MySql
