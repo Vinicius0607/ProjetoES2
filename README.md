@@ -47,3 +47,52 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
    - **BackEnd** - Golang
    - **Mobile** - Flutter (Aplicativo Fatecaronas)
    - **Banco de dados** - MySql
+
+---
+
+### 🥇 Nível de dificuldade do sistema proposto
+
+> Tabelas do banco
+
+- Transações
+- Usuários
+- Viagens
+- Avaliações
+- Comentários/Mensagens
+- Logs
+
+> Casos de uso
+
+- Padrões de aplicação
+   - Cadastro na plataforma
+   - Login na aplicação
+   - Edição de perfil
+
+- Dores de usuário
+   - Buscar viagens
+   - Solicitar carona
+   - Encerrar carona
+   - Avaliação de usuário
+   - Abrir viagem
+   - Gerenciar requisições de carona
+   - Encerrar viagem
+   - Histórico de viagens e rotas
+ 
+> Relatórios
+
+- Recibos e extrato das viagens/caronas
+- Histórico geral de viagens/caronas
+
+> Telas
+
+- Login
+- Cadastro
+- Página inicial com listagem de viagens
+- Página de abertura de uma viagem
+- Página de solicitação de uma carona
+- Menu de opções
+- Tela de histórico de viagens/caronas
+- Tela de extrato e recibos de pagamentos
+- Tela de meu perfil & Métodos de pagamento
+- Tela/Bottomsheet de avaliação do usuário
+
