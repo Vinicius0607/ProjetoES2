@@ -63,6 +63,8 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 
 > Casos de uso
 
+![Image](./out/uses_cases_fatecaronas/Fatecaronas.png)
+
 - Padrões de aplicação
    - Cadastro na plataforma
    - Login na aplicação
