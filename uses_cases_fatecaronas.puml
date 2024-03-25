@@ -23,10 +23,11 @@ p --> UC1
 p --> UC2
 p --> UC3
 p --> UC6
+p --> UC5
 UC2 .> UC4: <<extends>>
 d --> UC6
 d --> UC7
 d --> UC8
 d --> UC9
-
+d --> UC5
 @enduml
