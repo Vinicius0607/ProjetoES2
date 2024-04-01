@@ -98,3 +98,8 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 - Tela de meu perfil & Métodos de pagamento
 - Tela/Bottomsheet de avaliação do usuário
 
+---
+
+> Esboço da tela principal
+
+![Tela principal](./docs//tela_principal.jfif)
