@@ -21,7 +21,7 @@ package "Fatecaronas" {
 p --> UC1
 p --> UC3
 p --> UC5
-UC1 <.. UC2: <<includes>>
+UC1 <.. UC2: <<extends>>
 UC3 ..> UC6: <<extends>>
 UC9 ..> UC6: <<extends>>
 d --> UC7
