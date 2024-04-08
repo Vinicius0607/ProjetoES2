@@ -4,6 +4,7 @@ left to right direction
 ' Actors
 actor passenger as p
 actor driver as d
+system admin as a
 
 package "Fatecaronas" {
     ' Usecases
@@ -15,6 +16,11 @@ package "Fatecaronas" {
     usecase "Abrir viagem" as UC7
     usecase "Gerenciar requisição de carona" as UC8
     usecase "Encerrar viagem" as UC9
+    usecase "Denunciar perfil" as UC10
+    usecase "Bloquear perfil" as UC11
+    usecase "Gerenciar servidor" as UC12
+    usecase "Gerenciar dados" as UC13
+    usecase "Gerenciar perfis" as UC14
 }
 
 ' Relations
@@ -24,9 +30,12 @@ p --> UC5
 UC1 <.. UC2: <<extends>>
 UC3 ..> UC6: <<extends>>
 UC9 ..> UC6: <<extends>>
+UC6 ..> UC10: <<extends>>
+UC6 ..> UC11: <<extends>>
 d --> UC7
 d --> UC8
 d --> UC9
 d --> UC5
+a --> UC12
 
 @enduml
