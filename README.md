@@ -25,16 +25,6 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
    - O motorista pode cadastrar o horário da viagem, ponto de encontro, número de vagas disponíveis e valor da contribuição de cada passageiro.
    - Motorista consente que sua localização será visível pelo mapa dos passageiros
    - Usuário pode visualizar quantas vagas foram preenchidas.
-
-4. **Sistema de Pagamento**
-   - O pagamento será feito fora do aplicativo, diretamente entre passageiro e motorista.
-   - Aplicativo apenas mostra o valor esperado da contribuição.
-
-5. **Subsídio**
-   - O aplicativo será subsidiado pela Fatec Sorocaba.
-   - Link para doações ficará disponível no aplicativo.
-   - Possibilidade de patrocinadores com destaque e pontos de parada no mapa por exemplo.
-
 ---
 
 ### :dollar: [Modelo de negócios](https://github.com/pontisa/ProjetoES2/blob/main/docs/BUSINESS_MODEL.md);
