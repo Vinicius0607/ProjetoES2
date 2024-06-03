@@ -1,7 +1,31 @@
-<header class="w-full">
+<section class="w-full h-full relative flex flex-col">
+  <header class="w-full">
     <img src="/assets/login-banner.png" alt="Logo fatecaronas">
-    <div class="w-full p-5">
-        <h1 class="font-bold text-2xl">Olá!</h1>
-        <h3 class="font-normal text-lg">Bem vindo de volta</h3>
+  </header>
+
+  <div class="w-full p-5 flex flex-col flex-1">
+    <div class="flex-[2]">
+      <h1 class="font-bold text-2xl">Olá!</h1>
+      <h3 class="font-normal text-lg mb-3">Bem vindo de volta</h3>
+
+      <label for="email" class="text-gray-700 font-bold">Email</label>
+      <div class="relative bg-gray-300 rounded-md flex gap-2 items-center justify-start">
+        <span class="material-symbols-outlined ml-2">
+          mail
+        </span>
+        <input name="email" class="appearance-none p-3 w-full h-full rounded-md bg-inherit outline-none" type="text" placeholder="Insira seu email"/>
+      </div><br>
+
+      <label for="senha" class="text-gray-700 font-bold">Senha</label>
+      <div class="relative bg-gray-300 rounded-md flex gap-2 items-center justify-start">
+        <span class="material-symbols-outlined ml-2">
+          lock
+        </span>
+        <input name="senha" class="appearance-none p-3 w-full h-full rounded-md bg-inherit outline-none" type="password" placeholder="Insira sua senha"/>
+      </div>
+      <p class="m-0 text-right text-xs mt-1">Esqueci minha senha</p>
     </div>
-</header>
+    <button class="p-3 w-full rounded-md bg-black text-white font-bold">Entrar</button>
+  </div>
+</section>
+
