@@ -1,31 +1,52 @@
-<section class="w-full h-full relative flex flex-col">
+<section class="relative flex h-full w-full flex-col">
   <header class="w-full">
-    <img src="/assets/login-banner.png" alt="Logo fatecaronas">
+    <img src="/assets/login-banner.png" alt="Logo fatecaronas" />
   </header>
 
-  <div class="w-full p-5 flex flex-col flex-1">
+  <div class="flex w-full flex-1 flex-col p-5">
     <div class="flex-[2]">
-      <h1 class="font-bold text-2xl">Olá!</h1>
-      <h3 class="font-normal text-lg mb-3">Bem vindo de volta</h3>
+      <h1 class="text-2xl font-bold">Olá!</h1>
+      <h3 class="mb-3 text-lg font-normal">Bem vindo de volta</h3>
 
-      <label for="email" class="text-gray-700 font-bold">Email</label>
-      <div class="relative bg-gray-300 rounded-md flex gap-2 items-center justify-start">
-        <span class="material-symbols-outlined ml-2">
-          mail
-        </span>
-        <input name="email" class="appearance-none p-3 w-full h-full rounded-md bg-inherit outline-none" type="text" placeholder="Insira seu email"/>
-      </div><br>
-
-      <label for="senha" class="text-gray-700 font-bold">Senha</label>
-      <div class="relative bg-gray-300 rounded-md flex gap-2 items-center justify-start">
-        <span class="material-symbols-outlined ml-2">
-          lock
-        </span>
-        <input name="senha" class="appearance-none p-3 w-full h-full rounded-md bg-inherit outline-none" type="password" placeholder="Insira sua senha"/>
+      <label for="email" class="font-bold text-gray-700">Email</label>
+      <div
+        class="relative flex items-center justify-start gap-2 rounded-md bg-gray-300"
+      >
+        <span class="material-symbols-outlined ml-2"> mail </span>
+        <input
+          name="email"
+          class="h-full w-full appearance-none rounded-md bg-inherit p-3 outline-none"
+          type="text"
+          placeholder="Insira seu email"
+        />
       </div>
-      <p class="m-0 text-right text-xs mt-1">Esqueci minha senha</p>
+      <br />
+
+      <label for="senha" class="font-bold text-gray-700">Senha</label>
+      <div
+        class="relative flex items-center justify-start gap-2 rounded-md bg-gray-300"
+      >
+        <span class="material-symbols-outlined ml-2"> lock </span>
+        <input
+          name="senha"
+          class="h-full w-full appearance-none rounded-md bg-inherit p-3 outline-none"
+          type="password"
+          placeholder="Insira sua senha"
+        />
+      </div>
+      <p class="m-0 mt-1 text-right text-xs">Esqueci minha senha</p>
     </div>
-    <button class="p-3 w-full rounded-md bg-black text-white font-bold" (click)="handleSubmit()">Entrar</button>
+    <button
+      class="w-full rounded-md bg-black p-3 font-bold text-white"
+      (click)="handleSubmit()"
+    >
+      Entrar
+    </button>
+    <button
+      class="m-0 mt-1 cursor-pointer appearance-none text-right text-xs"
+      (click)="handleSignUp()"
+    >
+      Não possui uma conta? Inscreva-se
+    </button>
   </div>
 </section>
-
