@@ -29,4 +29,11 @@ export const PAGES_ROUTES: Routes = [
         (c) => c.RideRatingComponent
       ),
   },
+  {
+    path: 'ride-transactions',
+    loadComponent: () =>
+      import('./ride-transactions/ride-transactions.component').then(
+        (c) => c.RideTransactionsComponent
+      ),
+  },
 ]

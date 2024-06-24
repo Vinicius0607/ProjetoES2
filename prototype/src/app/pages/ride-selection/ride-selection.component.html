@@ -68,11 +68,19 @@
   <footer
     class="absolute bottom-0 flex w-full items-center justify-around border-t-2 border-t-stone-950 bg-white p-4 shadow-md"
   >
-    <button class="flex flex-col items-center">
+    <button
+      class="flex flex-col items-center"
+      [routerLink]="['/pages/ride-selection']"
+      routerLinkActive="router-link-active"
+    >
       <span class="material-symbols-outlined">home</span>
       <span>Início</span>
     </button>
-    <button class="flex flex-col items-center">
+    <button
+      class="flex flex-col items-center"
+      [routerLink]="['/pages/ride-transactions']"
+      routerLinkActive="router-link-active"
+    >
       <span class="material-symbols-outlined">assignment</span>
       <span>Registro</span>
     </button>

@@ -4,11 +4,12 @@ import {
   MatBottomSheetModule,
 } from '@angular/material/bottom-sheet'
 import { RideDetailsComponent } from '../ride-details/ride-details.component'
+import { RouterModule } from '@angular/router'
 
 @Component({
   selector: 'app-ride-selection',
   standalone: true,
-  imports: [MatBottomSheetModule],
+  imports: [MatBottomSheetModule, RouterModule],
   templateUrl: './ride-selection.component.html',
 })
 export class RideSelectionComponent {
