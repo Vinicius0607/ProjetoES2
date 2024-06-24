@@ -25,18 +25,19 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
    - O motorista pode cadastrar o horário da viagem, ponto de encontro, número de vagas disponíveis e valor da contribuição de cada passageiro.
    - Motorista consente que sua localização será visível pelo mapa dos passageiros
    - Usuário pode visualizar quantas vagas foram preenchidas.
+
 ---
 
-### :dollar: [Modelo de negócios](https://github.com/pontisa/ProjetoES2/blob/main/docs/BUSINESS_MODEL.md);
+### :dollar: [Modelo de negócios](https://github.com/pontisa/ProjetoES2/blob/main/docs/BUSINESS_MODEL.md)
 
 ---
 
 ### 🚀 Tecnologias a serem utilizadas
 
-   - **FrontEnd** - Angular 17 (Backoffice administrativo)
-   - **BackEnd** - Golang
-   - **Mobile** - Flutter (Aplicativo Fatecaronas)
-   - **Banco de dados** - MySql
+- **FrontEnd** - Angular 17 (Backoffice administrativo)
+- **BackEnd** - Golang
+- **Mobile** - Flutter (Aplicativo Fatecaronas)
+- **Banco de dados** - MySql
 
 ---
 
@@ -49,27 +50,30 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 - Viagens
 - Avaliações
 - Comentários/Mensagens
+- Grupos de usuários
 - Logs
+
+![Image](./docs/modelo_conceitual.png)
 
 > Casos de uso
 
 ![Image](./out/uses_cases_fatecaronas/Fatecaronas.png)
 
 - Padrões de aplicação
-   - Cadastro na plataforma
-   - Login na aplicação
-   - Edição de perfil
+  - Cadastro na plataforma
+  - Login na aplicação
+  - Edição de perfil
 
 - Dores de usuário
-   - Buscar viagens
-   - Solicitar carona
-   - Encerrar carona
-   - Avaliação de usuário
-   - Abrir viagem
-   - Gerenciar requisições de carona
-   - Encerrar viagem
-   - Histórico de viagens e rotas
- 
+  - Buscar viagens
+  - Solicitar carona
+  - Encerrar carona
+  - Avaliação de usuário
+  - Abrir viagem
+  - Gerenciar requisições de carona
+  - Encerrar viagem
+  - Histórico de viagens e rotas
+
 > Relatórios
 
 - Recibos e extrato das viagens/caronas
