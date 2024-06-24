@@ -1,0 +1,157 @@
+<div class="flex h-auto flex-col bg-gray-100 p-4 text-black">
+  <div
+    class="mb-4 flex items-center justify-between rounded-md bg-white p-4 shadow-sm"
+  >
+    <div class="flex cursor-pointer items-center">
+      <button class="mr-2" (click)="close()">
+        <!-- Ícone de voltar -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-black"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <span class="text-lg font-medium">Denunciar usuário</span>
+    </div>
+  </div>
+
+  <div class="mb-4 flex-1 rounded-md bg-white p-4 shadow-sm">
+    <h2 class="mb-4 text-lg font-medium">Por que vai Denunciá-lo?</h2>
+    <ul class="space-y-4">
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M4 3a1 1 0 00-1 1v2.5C3 8.328 5.354 10 8.5 10 10.042 10 11.514 9.367 12.5 8.4c.986.967 2.458 1.6 4 1.6 3.146 0 5.5-1.672 5.5-3.5V4a1 1 0 00-1-1H4zM2 7.5V20a1 1 0 001 1h18a1 1 0 001-1V7.5c-1.54 1.428-4.156 2.5-7 2.5-2.372 0-4.473-.642-6-1.7-1.527 1.058-3.628 1.7-6 1.7-2.844 0-5.46-1.072-7-2.5z"
+          />
+        </svg>
+        <span>Cometeu uma multa gravíssima</span>
+      </li>
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+        routerLinkActive="router-link-active"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M10 11h4v1h-4v-1zm-5 7h4v1H5v-1zm9 0h4v1h-4v-1zm-4-4h4v1h-4v-1zm-5 4h4v1H5v-1zm0-8v1h4V5H4v1H3V4.5A1.5 1.5 0 014.5 3h1A1.5 1.5 0 017 4.5V6h4V4.5A1.5 1.5 0 0112.5 3h1A1.5 1.5 0 0115 4.5V6h4V4.5A1.5 1.5 0 0120.5 3h1A1.5 1.5 0 0123 4.5v1H22v1h-1v10.5A1.5 1.5 0 0119.5 17h-15A1.5 1.5 0 013 15.5V5z"
+          />
+        </svg>
+        <span>O cabra é perigoso</span>
+      </li>
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+        routerLinkActive="router-link-active"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-5.514-4.486-10-10-10zm1 17h-2v-2h2v2zm0-4h-2v-7h2v7z"
+          />
+        </svg>
+        <span>É Suspeito</span>
+      </li>
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+        routerLinkActive="router-link-active"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M10 2a1 1 0 00-1 1v2.5c0 1.833 2.354 3.5 5.5 3.5s5.5-1.667 5.5-3.5V3a1 1 0 00-1-1h-9zM3 8.5V21a1 1 0 001 1h16a1 1 0 001-1V8.5c-1.54 1.428-4.156 2.5-7 2.5-2.372 0-4.473-.642-6-1.7-1.527 1.058-3.628 1.7-6 1.7-2.844 0-5.46-1.072-7-2.5z"
+          />
+        </svg>
+        <span>Não fui com a cara dele</span>
+      </li>
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+        routerLinkActive="router-link-active"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 2a10 10 0 00-4 19.025v-1.05A9 9 0 0112 3c2.236 0 4.28.73 5.924 1.975H16.95A8.978 8.978 0 0012 5c-2.23 0-4.28.73-5.924 1.975H5a9 9 0 00-1.075 17.95v1.05A10 10 0 0012 2z"
+          />
+        </svg>
+        <span>Crime contre meu pudor</span>
+      </li>
+      <li
+        class="flex cursor-pointer items-center"
+        [routerLink]="['/pages/ride-selection']"
+        (click)="close()"
+        (keypress)="close()"
+        tabindex
+        routerLinkActive="router-link-active"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-6 w-6 text-gray-700"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+        <span>Outro</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="rounded-md bg-white p-4 shadow-sm">
+    <button class="w-full rounded-md bg-black p-2 text-white" (click)="close()">
+      Cancelar
+    </button>
+  </div>
+</div>

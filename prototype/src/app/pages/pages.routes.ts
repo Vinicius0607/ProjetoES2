@@ -22,4 +22,11 @@ export const PAGES_ROUTES: Routes = [
         (c) => c.RideTrackComponent
       ),
   },
+  {
+    path: 'ride-rating',
+    loadComponent: () =>
+      import('./ride-rating/ride-rating.component').then(
+        (c) => c.RideRatingComponent
+      ),
+  },
 ]

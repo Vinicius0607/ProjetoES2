@@ -1,0 +1,91 @@
+<section
+  class="relative flex h-full w-full flex-col items-start justify-between bg-white p-6"
+>
+  <header class="mb-4 flex items-center justify-between bg-white">
+    <div class="flex cursor-pointer items-center">
+      <a class="mr-2" [routerLink]="['/pages/ride-selection']">
+        <!-- Ícone de voltar -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-black"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </a>
+      <span class="text-lg font-medium">Avaliação</span>
+    </div>
+  </header>
+  <main
+    class="flex w-full flex-grow flex-col items-center justify-start gap-y-5 overflow-auto pt-20"
+  >
+    <img src="assets/glauco.png" alt="Rider" class="w-28 rounded-full" />
+    <p><strong>Glauco</strong></p>
+    <div class="stars flex flex-row gap-2">
+      @for (item of [1, 2, 3, 4, 5]; track $index) {
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="star"
+        >
+          <polygon
+            points="12,2 15.09,8.36 22,9.24 17,13.74 18.18,21 12,17.5 5.82,21 7,13.74 2,9.24 8.91,8.36"
+            style="fill: gray; stroke: gray; stroke-width: 0.5"
+          />
+        </svg>
+      }
+    </div>
+    <p>Deixe seu feedback</p>
+    <div
+      class="chips flex flex-row flex-wrap items-center justify-center gap-2"
+    >
+      @for (
+        item of [
+          'Guerreiro',
+          'Lisan Al Gaib',
+          'Diferenciado',
+          'Iluminado',
+          'Correu bem',
+          'Cheguei na prova',
+          'Agradável'
+        ];
+        track $index
+      ) {
+        <button
+          class="flex flex-row items-center rounded-full bg-gray-100 p-3 hover:bg-black"
+        >
+          <span class="material-symbols-outlined mr-2">check</span>
+          <p class="m-[0_!important]">{{ item }}</p>
+        </button>
+      }
+    </div>
+  </main>
+  <footer class="relative flex w-full flex-col flex-wrap gap-y-2">
+    <button
+      class="flex-1 rounded-md bg-secondary p-2 text-white"
+      (click)="openBanDetails()"
+    >
+      Bloquear
+    </button>
+    <button
+      class="flex-1 rounded-md bg-primary p-2 text-white"
+      (click)="openReportDetails()"
+    >
+      Denunciar
+    </button>
+    <button
+      class="flex-1 rounded-md bg-black p-2 text-white"
+      (click)="submitRate()"
+    >
+      Enviar
+    </button>
+  </footer>
+</section>

@@ -6,20 +6,30 @@ import {
 import { RouterModule } from '@angular/router'
 
 @Component({
-  selector: 'app-ride-cancel',
+  selector: 'app-ride-block',
   standalone: true,
+  templateUrl: './ride-block.component.html',
   imports: [MatBottomSheetModule, RouterModule],
-  templateUrl: './ride-cancel.component.html',
   styles: `
     ::ng-deep .mat-bottom-sheet-container {
       padding: unset;
     }
   `,
 })
-export class RideCancelComponent {
-  constructor(private _bottomSheet: MatBottomSheetRef<RideCancelComponent>) {}
+export class RideBlockComponent {
+  private _accepted: boolean = false
 
-  public close(): void {
+  constructor(private _bottomSheet: MatBottomSheetRef<RideBlockComponent>) {}
+
+  public close() {
     this._bottomSheet.dismiss()
+  }
+
+  public set accepted(hasAccepted: boolean) {
+    this._accepted = hasAccepted
+  }
+
+  public get accepted(): boolean {
+    return this._accepted
   }
 }

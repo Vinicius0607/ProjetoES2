@@ -6,18 +6,18 @@ import {
 import { RouterModule } from '@angular/router'
 
 @Component({
-  selector: 'app-ride-cancel',
+  selector: 'app-ride-report',
   standalone: true,
   imports: [MatBottomSheetModule, RouterModule],
-  templateUrl: './ride-cancel.component.html',
+  templateUrl: './ride-report.component.html',
   styles: `
     ::ng-deep .mat-bottom-sheet-container {
       padding: unset;
     }
   `,
 })
-export class RideCancelComponent {
-  constructor(private _bottomSheet: MatBottomSheetRef<RideCancelComponent>) {}
+export class RideReportComponent {
+  constructor(private _bottomSheet: MatBottomSheetRef<RideReportComponent>) {}
 
   public close(): void {
     this._bottomSheet.dismiss()
