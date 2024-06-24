@@ -9,6 +9,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Change to prototype directory
+        run: cd prototype
+
       - name: Angular Deploy gh-pages Actions
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
         with:
