@@ -1,1 +1,21 @@
-<p>profile-selection works!</p>
+<main class="flex h-full flex-col items-center gap-y-3 p-4">
+  <h1 class="flex-1">
+    Selecione seu perfil que se encaixa com sua necessidade:
+  </h1>
+  <div class="flex w-full flex-1 flex-col items-center justify-start gap-y-2">
+    <a
+      class="w-1/2 rounded-md bg-black p-3 text-center font-bold text-white"
+      [routerLink]="['/pages/ride-selection']"
+      routerLinkActive="router-link-active"
+    >
+      Passageiro
+    </a>
+    <a
+      class="w-1/2 rounded-md bg-black p-3 text-center font-bold text-white"
+      [routerLink]="['/ride-open']"
+      routerLinkActive="router-link-active"
+    >
+      Motorista
+    </a>
+  </div>
+</main>

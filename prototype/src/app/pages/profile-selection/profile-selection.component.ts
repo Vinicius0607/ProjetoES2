@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { RouterModule } from '@angular/router'
 
 @Component({
   selector: 'app-profile-selection',
   standalone: true,
-  imports: [],
-  templateUrl: './profile-selection.component.html'
+  imports: [RouterModule],
+  templateUrl: './profile-selection.component.html',
 })
-export class ProfileSelectionComponent {
-
-}
+export class ProfileSelectionComponent {}
