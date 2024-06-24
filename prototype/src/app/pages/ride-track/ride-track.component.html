@@ -1,0 +1,32 @@
+<div class="flex h-screen flex-col rounded-md bg-gray-100 p-4 shadow-md">
+  <div
+    class="mb-4 flex items-center justify-between rounded-md bg-white p-4 shadow-sm"
+  >
+    <span class="text-lg font-medium">Acompanhamento da Viagem</span>
+  </div>
+
+  <div
+    class="mb-4 flex flex-1 items-center justify-center rounded-md bg-white p-4 shadow-sm"
+  >
+    <img
+      src="assets/navigation.gif"
+      class="h-full w-full border object-cover"
+      alt="Map"
+    />
+  </div>
+
+  <div class="flex justify-between">
+    <button
+      (click)="cancelTrip()"
+      class="rounded-full bg-secondary px-4 py-2 font-medium text-white"
+    >
+      Cancelar
+    </button>
+    <button
+      (click)="finishTrip()"
+      class="rounded-full bg-primary px-4 py-2 font-medium text-white"
+    >
+      Finalizar Viagem
+    </button>
+  </div>
+</div>

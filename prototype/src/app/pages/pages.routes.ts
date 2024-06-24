@@ -15,4 +15,11 @@ export const PAGES_ROUTES: Routes = [
         (c) => c.RideSelectionComponent
       ),
   },
+  {
+    path: 'ride-track',
+    loadComponent: () =>
+      import('./ride-track/ride-track.component').then(
+        (c) => c.RideTrackComponent
+      ),
+  },
 ]

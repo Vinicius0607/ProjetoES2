@@ -1,79 +1,83 @@
-<div class="flex h-auto flex-col overflow-y-auto bg-white">
-  <!-- Header -->
-  <header class="flex items-center justify-between bg-white p-4">
-    <img src="assets/ride-banner.png" alt="Ride Banner" class="w-full" />
-  </header>
+<div class="relative flex h-full flex-col overflow-auto bg-white">
+  <div class="overflow-auto">
+    <!-- Header -->
+    <header class="flex items-center justify-between bg-white p-4">
+      <img src="assets/ride-banner.png" alt="Ride Banner" class="w-full" />
+    </header>
 
-  <!-- Car Selection -->
-  <section class="flex flex-col items-center bg-white p-4">
-    <div class="mb-4 flex space-x-4">
-      <div class="flex flex-col items-center">
-        <img src="assets/car-1.png" alt="Car 1" class="h-16 w-24" />
-        <span class="text-[10px]">Padrão 4 portas</span>
+    <!-- Car Selection -->
+    <section class="flex flex-col items-center bg-white p-4">
+      <div class="mb-4 flex space-x-4">
+        <div class="flex flex-col items-center">
+          <img src="assets/car-1.png" alt="Car 1" class="h-16 w-24" />
+          <span class="text-[10px]">Padrão 4 portas</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/car-2.png" alt="Car 2" class="h-16 w-24" />
+          <span class="text-[10px]">Chique 4 portas</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/car-3.png" alt="Car 3" class="h-16 w-24" />
+          <span class="text-[10px]">Padrão 6 portas</span>
+        </div>
       </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/car-2.png" alt="Car 2" class="h-16 w-24" />
-        <span class="text-[10px]">Chique 4 portas</span>
+
+      <div class="mb-4 flex w-full items-center">
+        <span class="material-symbols-outlined mr-2">search</span>
+        <input
+          type="text"
+          placeholder="Bora pra FATEC?"
+          class="w-full border-b border-gray-300 bg-white p-2 focus:outline-none"
+        />
+        <button class="m-2 rounded bg-gray-200 p-2">Agora</button>
       </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/car-3.png" alt="Car 3" class="h-16 w-24" />
-        <span class="text-[10px]">Padrão 6 portas</span>
+
+      <button class="mb-4 flex w-full appearance-none items-center">
+        <span class="material-symbols-outlined mr-2">bookmark</span>
+        <span>Selecionar um lugar salvo</span>
+      </button>
+
+      <button class="mb-4 flex w-full appearance-none items-center">
+        <span class="material-symbols-outlined mr-2">location_on</span>
+        <span>Selecionar um destino no mapa</span>
+      </button>
+    </section>
+
+    <!-- Additional Options -->
+    <section class="mb-8 mt-4 flex-grow bg-white p-4 shadow-md">
+      <div class="mb-4">
+        <h2 class="text-lg font-bold">Você pode combinar paradas</h2>
+        <button class="mt-2 rounded bg-gray-200 p-2">Saiba mais</button>
       </div>
-    </div>
 
-    <div class="mb-4 flex w-full items-center">
-      <span class="material-symbols-outlined mr-2">search</span>
-      <input
-        type="text"
-        placeholder="Para onde quer ir?"
-        class="w-full border-b border-gray-300 p-2 focus:outline-none"
-      />
-      <button class="m-2 rounded bg-gray-200 p-2">Agora</button>
-    </div>
-
-    <button class="mb-4 flex w-full appearance-none items-center">
-      <span class="material-symbols-outlined mr-2">bookmark</span>
-      <span>Selecionar um lugar salvo</span>
-    </button>
-
-    <button class="mb-4 flex w-full appearance-none items-center">
-      <span class="material-symbols-outlined mr-2">location_on</span>
-      <span>Selecionar um destino no mapa</span>
-    </button>
-  </section>
-
-  <!-- Additional Options -->
-  <section class="mt-4 flex-grow bg-white p-4 shadow-md">
-    <div class="mb-4 flex items-center">
-      <span class="material-icons">person_add</span>
-      <span>Solicitar carona para alguém</span>
-    </div>
-
-    <div class="mb-4">
-      <h2 class="text-lg font-bold">Você pode combinar paradas</h2>
-      <button class="mt-2 rounded bg-gray-200 p-2">Saiba mais</button>
-    </div>
-
-    <div>
-      <h2 class="mb-4 text-lg font-bold">Possíveis caronas perto de você</h2>
-      <div class="relative h-64 w-full bg-gray-100">
-        <!-- Add a map image or component here -->
+      <div>
+        <h2 class="mb-4 text-lg font-bold">Possíveis caronas perto de você</h2>
+        <div
+          class="relative h-48 w-full cursor-pointer bg-gray-100"
+          (click)="openRideDetails()"
+          (keypress)="openRideDetails()"
+          tabindex="15"
+        >
+          <img src="assets/ride-map.png" class="cover-fill" alt="Map" />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Footer Navigation -->
-  <footer class="flex items-center justify-around bg-white p-4 shadow-md">
+  <footer
+    class="absolute bottom-0 flex w-full items-center justify-around border-t-2 border-t-stone-950 bg-white p-4 shadow-md"
+  >
     <button class="flex flex-col items-center">
-      <span class="material-icons">home</span>
+      <span class="material-symbols-outlined">home</span>
       <span>Início</span>
     </button>
     <button class="flex flex-col items-center">
-      <span class="material-icons">assignment</span>
+      <span class="material-symbols-outlined">assignment</span>
       <span>Registro</span>
     </button>
     <button class="flex flex-col items-center">
-      <span class="material-icons">person</span>
+      <span class="material-symbols-outlined">person</span>
       <span>Perfil</span>
     </button>
   </footer>
