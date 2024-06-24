@@ -4,6 +4,7 @@ import {
   MatBottomSheetModule,
 } from '@angular/material/bottom-sheet'
 import { RideCancelComponent } from '../ride-cancel/ride-cancel.component'
+import { RideFinishComponent } from '../ride-finish/ride-finish.component'
 
 @Component({
   selector: 'app-ride-track',
@@ -19,6 +20,6 @@ export class RideTrackComponent {
   }
 
   finishTrip(): void {
-    alert('Viagem finalizada. Você chegou ao seu destino.')
+    this._bottomSheet.open(RideFinishComponent)
   }
 }
