@@ -101,3 +101,21 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 > Esboço da tela principal
 
 ![Tela principal](./docs//tela_principal.jfif)
+
+> Protótipo de alta fidelidade
+
+O protótipo de alta fidelidade está dentro da pasta `prototype` e para rodar basta ter o node versão >=20 como requisito.
+
+Após ter a versão do node instalada, acesse a pasta `prototype`e digite o seguinte comando no terminal para instalar as dependêcias
+
+```sh
+npm install
+```
+
+Após isso, execute o projeto com o comando
+
+```sh
+npm run start
+```
+
+Navegue até `http://localhost:4200` e é NECESSÁRIO que o modo responsivo esteja ativado pois o protótipo foi feito visando uma aplicação mobile od mundo real. Resoluções recomendadas são as menores que 450 pixels de largura
