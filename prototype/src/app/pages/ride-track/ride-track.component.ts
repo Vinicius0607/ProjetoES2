@@ -1,16 +1,21 @@
 import { Component } from '@angular/core'
+import {
+  MatBottomSheet,
+  MatBottomSheetModule,
+} from '@angular/material/bottom-sheet'
+import { RideCancelComponent } from '../ride-cancel/ride-cancel.component'
 
 @Component({
   selector: 'app-ride-track',
   standalone: true,
-  imports: [],
+  imports: [MatBottomSheetModule],
   templateUrl: './ride-track.component.html',
 })
 export class RideTrackComponent {
-  constructor() {}
+  constructor(private _bottomSheet: MatBottomSheet) {}
 
   cancelTrip(): void {
-    alert('Viagem cancelada.')
+    this._bottomSheet.open(RideCancelComponent)
   }
 
   finishTrip(): void {
