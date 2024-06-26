@@ -19,6 +19,7 @@ package "Fatecaronas" {
     usecase "Denunciar perfil" as UC10
     usecase "Bloquear perfil" as UC11
     usecase "Criar Grupo" as UC18
+    usecase "Solicitar amizade" as UC19
 }
  
 package "Fatecaronas admin dashboard" {
@@ -40,6 +41,8 @@ UC3 ..> UC6: <<extends>>
 UC9 ..> UC6: <<extends>>
 UC6 ..> UC10: <<extends>>
 UC6 ..> UC11: <<extends>>
+UC6 ..> UC18: <<extends>>
+UC6 ..> UC19: <<extends>>
 d --> UC7
 d --> UC8
 d --> UC9
