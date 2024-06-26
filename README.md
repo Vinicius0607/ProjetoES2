@@ -2,7 +2,6 @@
 
 ## Autores
 
-- &#9745; - ~~Isabela Pontes~~
 - &#9745; - Luiz Miguel Jarduli Leite
 - &#9745; - Vinicius de Sousa Andrade
 
@@ -97,10 +96,6 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 - Tela/Bottomsheet de avaliação do usuário
 
 ---
-
-> Esboço da tela principal
-
-![Tela principal](./docs//tela_principal.jfif)
 
 > Protótipo de alta fidelidade
 
