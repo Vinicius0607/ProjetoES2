@@ -119,3 +119,7 @@ npm run start
 ```
 
 Navegue até `http://localhost:4200` e é NECESSÁRIO que o modo responsivo esteja ativado pois o protótipo foi feito visando uma aplicação mobile od mundo real. Resoluções recomendadas são as menores que 450 pixels de largura
+
+> Apresentação en vídeo
+
+Protótipo de alta fidelidade apresentado en vídeo no youtube disponível neste [link](https://youtu.be/DFV0-y3--jg)
