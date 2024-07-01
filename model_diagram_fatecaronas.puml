@@ -1,0 +1,72 @@
+@startuml "model"
+
+class Usuario {
+    id_usuario: Integer
+    nome: String
+    telefone: String
+    email: String
+    foto_de_perfil: String
+    bloqueado: Boolean
+}
+
+class Motorista {
+    carro: String
+}
+
+class Grupo {
+    id_grupo: Integer
+    nome: String
+    qtd_vagas: Integer
+}
+
+class Mensagem {
+    id_mensagem: Integer
+    mensagem: String
+}
+
+class Avaliacao {
+    id_avaliacao: Integer
+    mensagem: String
+    total_avaliacao: Integer
+}
+
+class Viagem {
+    id_viagem: Integer
+    endereco: String
+    destino: String
+}
+
+class Transacao {
+    id_transacao: Integer
+    total_viagem: Integer
+}
+
+Usuario "1" -down- "1..*" Grupo : fk_usuario
+Grupo "1" -down- "1..*" Usuario : fk_grupo
+
+Usuario "1" -down- "1..*" Avaliacao : fk_usuario_motorista
+Usuario "1" -down- "1..*" Avaliacao : fk_usuario_passageiro
+Usuario "1" -down- "1..*" Avaliacao : fk_usuario_enviou
+
+Usuario "1" -down- "1..*" Mensagem : fk_usuario_passageiro
+Usuario "1" -down- "1..*" Mensagem : fk_usuario_motorista
+Usuario "1" -down- "1..*" Mensagem : fk_mensagem
+Usuario "1" -down- "1..*" Mensagem : fk_usuario_enviou
+
+Usuario "1" -down- "1..*" Viagem : fk_usuario_passageiro
+Usuario "1" -down- "1..*" Viagem : fk_usuario_motorista
+
+Usuario "1" -down- "1..*" Transacao : fk_usuario_passageiro
+Usuario "1" -down- "1..*" Transacao : fk_usuario_motorista
+
+Motorista "0..1" -left- "1" Usuario : fk_usuario
+Motorista "0..1" -left- "0..*" Viagem : deixa
+
+Motorista --|> Usuario
+
+Transacao "1" -right- "1" Viagem : gera
+
+Usuario "1" -down- "1..*" Viagem : abre
+Usuario "1" -down- "1..*" Viagem : solicita
+
+@enduml

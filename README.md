@@ -57,7 +57,7 @@ Pensado para conectar alunos sem veículo próprio com outros alunos que queiram
 
 > Digrama de classes (Modelo conceitual)
 
-![Image](./docs/diagrama_de_classes.png)
+![Image](./out/model_diagram_fatecaronas/model.png)
 
 > Casos de uso
 
